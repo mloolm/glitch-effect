@@ -1,0 +1,46 @@
+{
+  "name": "glitch-effect",
+  "version": "1.0.0",
+  "description": "A lightweight and customizable glitch visual effect for images using pure JavaScript.",
+  "main": "dist/glitch-effect.min.js",
+  "module": "src/glitch-effect.js",
+  "keywords": [
+    "glitch",
+    "effect",
+    "visual",
+    "image",
+    "javascript",
+    "animation",
+    "noise",
+    "distortion"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Pavel Krasheninin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mloolm/glitch-effect"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/glitch-effect.js",
+      "require": "./dist/glitch-effect.min.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^2.79.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
